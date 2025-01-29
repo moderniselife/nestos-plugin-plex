@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Box, TextField, Button, Card, CardContent, Typography, Alert } from '@mui/material';
 
-// Remove all imports and export directly
-export default function PlexConfig() {
+function PlexConfig() {
   const [config, setConfig] = React.useState({
     timezone: '',
     plexClaim: '',
