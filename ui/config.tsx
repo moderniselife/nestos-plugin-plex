@@ -34,7 +34,9 @@ function PluginConfig() {
     }
   };
 
-  loadConfig();
+  useEffect(() => {
+    loadConfig();
+  }, []);
 
   return (
     <Card>
