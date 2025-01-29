@@ -3,7 +3,7 @@ import { Box, TextField, Button, Card, CardContent, Typography, Alert } from '@m
 const currentDomain = new URL(window.location.href);
 const apiURL = `http://${currentDomain.hostname}:3000/api/plugins/plex`;
 
-async function PluginConfig() {
+function PluginConfig() {
   var [config, setConfig] = React.useState({
     timezone: '',
     plexClaim: '',
@@ -34,7 +34,7 @@ async function PluginConfig() {
     }
   };
 
-  await loadConfig();
+  loadConfig();
 
   return (
     <Card>
