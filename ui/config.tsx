@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Box, TextField, Button, Card, CardContent, Typography, Alert } from '@mui/material';
 
-function PlexConfig() {
+function PluginConfig() {
   const [config, setConfig] = React.useState({
     timezone: '',
     plexClaim: '',
