@@ -52,20 +52,20 @@ async function PluginConfig() {
           <TextField
             fullWidth
             label="Plex Claim Token"
-            value={config.plexClaim}
+            value={config?.plexClaim || ''}
             onChange={(e) => setConfig({ ...config, plexClaim: e.target.value })}
           />
           <TextField
             fullWidth
             label="Media Directory"
-            value={config.mediaDir}
+            value={config?.mediaDir || ''}
             onChange={(e) => setConfig({ ...config, mediaDir: e.target.value })}
             helperText="Directory containing your media files"
           />
           <TextField
             fullWidth
             label="Transcode Directory"
-            value={config.transcodeDir}
+            value={config?.transcodeDir || ''}
             onChange={(e) => setConfig({ ...config, transcodeDir: e.target.value })}
           />
           <Button variant="contained" onClick={handleSave}>
